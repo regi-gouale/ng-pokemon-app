@@ -10,12 +10,13 @@ export class AppComponent implements OnInit{
   pokemonList:Array<Pokemon>= POKEMONS;
 
   ngOnInit(): void {
-    console.table(this.pokemonList);
+    // console.table(this.pokemonList);
     // this.selectPokemon(this.pokemonList[0]);
   }
 
-  selectPokemon(pokemon: Pokemon): void {
-    console.log(`Vous avez cliqué sur le pokemon ${pokemon.name}`);
+  selectPokemon(event: MouseEvent): void {
+    const index: number = +((event.target as HTMLInputElement).value);
+    console.log(`Vous avez cliqué sur le pokemon ${this.pokemonList[index].name}`);
   }
 
 }

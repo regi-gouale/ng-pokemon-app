@@ -1,13 +1,17 @@
 <h1>Liste de Pokémons</h1>
-<p (click)="selectPokemon(pokemonList[0])" >{{ pokemonList[0].name }}</p>
-<p (click)="selectPokemon(pokemonList[1])" >{{ pokemonList[1].name }}</p>
-<p (click)="selectPokemon(pokemonList[2])" >{{ pokemonList[2].name }}</p>
-<p (click)="selectPokemon(pokemonList[3])" >{{ pokemonList[3].name }}</p>
-<p (click)="selectPokemon(pokemonList[4])" >{{ pokemonList[4].name }}</p>
-<p (click)="selectPokemon(pokemonList[5])" >{{ pokemonList[5].name }}</p>
-<p (click)="selectPokemon(pokemonList[6])" >{{ pokemonList[6].name }}</p>
-<p (click)="selectPokemon(pokemonList[7])" >{{ pokemonList[7].name }}</p>
-<p (click)="selectPokemon(pokemonList[8])" >{{ pokemonList[8].name }}</p>
-<p (click)="selectPokemon(pokemonList[9])" >{{ pokemonList[9].name }}</p>
-<p (click)="selectPokemon(pokemonList[10])" >{{ pokemonList[10].name }}</p>
-<p (click)="selectPokemon(pokemonList[11])" >{{ pokemonList[11].name }}</p>
+<input 
+    type="number"
+    (click)="selectPokemon($event)"
+>
+<p >{{ pokemonList[0].name }}</p>
+<p >{{ pokemonList[1].name }}</p>
+<p >{{ pokemonList[2].name }}</p>
+<p >{{ pokemonList[3].name }}</p>
+<p >{{ pokemonList[4].name }}</p>
+<p >{{ pokemonList[5].name }}</p>
+<p >{{ pokemonList[6].name }}</p>
+<p >{{ pokemonList[7].name }}</p>
+<p >{{ pokemonList[8].name }}</p>
+<p >{{ pokemonList[9].name }}</p>
+<p >{{ pokemonList[10].name }}</p>
+<p >{{ pokemonList[11].name }}</p>
