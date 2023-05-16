@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
     const pokemon: Pokemon | undefined = this.pokemonList.find(pokemon => pokemon.id === +(pokemonId));
     // this.pokemonSelected = this.pokemonList.find(pokemon => pokemon.id === index);
     if (pokemon) {
-      console.log(`Vous avez cliqué sur le pokemon ${pokemon?.name}`);
+      console.log(`Vous avez sélectionné sur le pokemon: ${pokemon?.name}`);
       this.pokemonSelected = pokemon;
     } else {
       console.log(`Le pokemon ${pokemonId} n'existe pas`);
