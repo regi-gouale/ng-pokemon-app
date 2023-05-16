@@ -6,17 +6,24 @@ import { POKEMONS } from './mock-pokemon-list';
   selector: 'app-root',
   templateUrl: './app.component.html',
 })
-export class AppComponent implements OnInit{
-  pokemonList:Array<Pokemon>= POKEMONS;
+export class AppComponent implements OnInit {
+  pokemonList: Array<Pokemon> = POKEMONS;
+  pokemonSelected: Pokemon | undefined;
 
   ngOnInit(): void {
-    // console.table(this.pokemonList);
-    // this.selectPokemon(this.pokemonList[0]);
   }
 
-  selectPokemon(event: MouseEvent): void {
-    const index: number = +((event.target as HTMLInputElement).value);
-    console.log(`Vous avez cliqué sur le pokemon ${this.pokemonList[index].name}`);
+  selectPokemon(pokemonId: string): void {
+    const pokemon: Pokemon | undefined = this.pokemonList.find(pokemon => pokemon.id === +(pokemonId));
+    // this.pokemonSelected = this.pokemonList.find(pokemon => pokemon.id === index);
+    if (pokemon) {
+      console.log(`Vous avez cliqué sur le pokemon ${pokemon?.name}`);
+      this.pokemonSelected = pokemon;
+    } else {
+      console.log(`Le pokemon ${pokemonId} n'existe pas`);
+      this.pokemonSelected = undefined;
+    }
+
   }
 
 }
