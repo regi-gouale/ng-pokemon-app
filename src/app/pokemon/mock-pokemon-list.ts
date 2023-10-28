@@ -451,4 +451,94 @@ export const POKEMONS: Pokemon[] = [
         types: ["Sol"],
         created: new Date()
     },
+    {
+        id: 51,
+        name: "Triopikeur",
+        hp: 40,
+        cp: 12,
+        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/051.png",
+        types: ["Sol"],
+        created: new Date()
+    },
+    {
+        id: 52,
+        name: "Miaouss",
+        hp: 20,
+        cp: 6,
+        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/052.png",
+        types: ["Normal"],
+        created: new Date()
+    },
+    {
+        id: 53,
+        name: "Persian",
+        hp: 40,
+        cp: 12,
+        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/053.png",
+        types: ["Normal"],
+        created: new Date()
+    },
+    {
+        id: 54,
+        name: "Psykokwak",
+        hp: 20,
+        cp: 6,
+        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/054.png",
+        types: ["Eau"],
+        created: new Date()
+    },
+    {
+        id: 55,
+        name: "Akwakwak",
+        hp: 40,
+        cp: 12,
+        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/055.png",
+        types: ["Eau"],
+        created: new Date()
+    },
+    {
+        id: 56,
+        name: "Férosinge",
+        hp: 20,
+        cp: 6,
+        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/056.png",
+        types: ["Combat"],
+        created: new Date()
+    },
+    {
+        id: 57,
+        name: "Colossinge",
+        hp: 40,
+        cp: 12,
+        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/057.png",
+        types: ["Combat"],
+        created: new Date()
+    },
+    {
+        id: 58,
+        name: "Caninos",
+        hp: 20,
+        cp: 6,
+        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/058.png",
+        types: ["Feu"],
+        created: new Date()
+    },
+    {
+        id: 59,
+        name: "Arcanin",
+        hp: 40,
+        cp: 12,
+        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/059.png",
+        types: ["Feu"],
+        created: new Date()
+    },
+    {
+        id: 60,
+        name: "Ptitard",
+        hp: 20,
+        cp: 6,
+        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/060.png",
+        types: ["Eau"],
+        created: new Date()
+    }
 ];
