@@ -72,4 +72,6 @@
         </div>
     </div>
 </form>
-<h3 *ngIf="!pokemon && !isAddForm" class="center">Aucun pokémon</h3>
+<h3 *ngIf="!pokemon && !isAddForm" class="center">
+    <app-loader></app-loader>
+</h3>
