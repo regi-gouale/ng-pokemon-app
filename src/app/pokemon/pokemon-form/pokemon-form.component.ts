@@ -11,7 +11,7 @@ export class PokemonFormComponent implements OnInit {
   @Input() pokemon: any;
   types: string[];
 
-  constructor(private pokemonService: PokemonService, 
+  constructor(private pokemonService: PokemonService,
     private router: Router) { }
 
   ngOnInit(): void {
@@ -35,8 +35,8 @@ export class PokemonFormComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log('Submit form !');
-    this.router.navigate(['/pokemon', this.pokemon.id]);
+    this.pokemonService.updatePokemon(this.pokemon)
+    .subscribe(() => this.router.navigate(['/pokemon', this.pokemon.id]));
   }
   isTypesValid(type: string): boolean {
     if (this.pokemon.types.length === 1 && this.hasType(type)) {
