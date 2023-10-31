@@ -9,7 +9,7 @@ import { NgIf, NgFor } from '@angular/common';
 @Component({
     selector: 'app-pokemon-form',
     templateUrl: './pokemon-form.component.html',
-    styleUrls: ['./pokemon-form.component.css'],
+    styleUrls: ['./pokemon-form.component.scss'],
     standalone: true,
     imports: [NgIf, FormsModule, NgFor, LoaderComponent, PokemonTypeColorPipe]
 })
