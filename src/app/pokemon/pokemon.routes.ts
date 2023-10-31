@@ -14,12 +14,14 @@ export default [{
         },
         {
             path: 'add/pokemon',
+            title: 'Ajouter un Pokémon',
             loadComponent: () => import('./add-pokemon/add-pokemon.component')
                 .then(m => m.AddPokemonComponent),
             canActivate: [authGuard]
         },
         {
             path: 'pokemons',
+            title: 'Pokédex',
             loadComponent: () => import('./list-pokemon/list-pokemon.component')
                 .then(m => m.ListPokemonComponent),
         },
