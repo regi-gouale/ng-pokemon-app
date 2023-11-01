@@ -17,9 +17,6 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
-    "@carbon/icons": "^11.29.1",
-    "carbon-components": "^10.58.10",
-    "carbon-components-angular": "^5.15.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
@@ -29,7 +26,6 @@
     "@angular/cli": "^16.2.7",
     "@angular/compiler-cli": "^16.2.0",
     "angular-in-memory-web-api": "^0.16.0",
-    "schematics-scss-migrate": "^2.3.17",
     "typescript": "~5.1.3"
   }
 }
