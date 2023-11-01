@@ -1,3 +1,6 @@
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+
 import { importProvidersFrom } from '@angular/core';
 import { AppComponent } from './app/app.component';
 import { provideRouter, Routes } from '@angular/router';
@@ -16,13 +19,11 @@ const routes: Routes = [
     },
     {
         path: 'login',
-        title: 'Se connecter',
         loadComponent: () => import("./app/login/login.component")
             .then(m => m.LoginComponent)
     },
     {
         path: '**',
-        title: 'Page non trouvée',
         loadComponent: () => import("./app/page-not-found/page-not-found.component")
             .then(m => m.PageNotFoundComponent)
     }
